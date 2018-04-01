@@ -163,7 +163,6 @@ was able to train the model for 25 epochs and obtained a test accuracy of 97.4%.
 ![Plot of test accuracy][imageTestAccuracy]
 ![Test and validation accuracy][imageTestAccuracy1]
 
-
 #### Solution Approach
 
 
