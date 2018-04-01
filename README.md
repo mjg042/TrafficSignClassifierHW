@@ -38,44 +38,30 @@ To accomplish this task, I built an image processing pipeline, which consisted o
 
 ## Rebric Points
 
-# Files Submitted
+### Files Submitted
 
 
 
+### Dataset Exploration
 
-
-To get started, Udacity kindly gave students a number of helper functions. Students then had to modify them to improve them. For example, a number of parameters had to be tweaked to transform the images properly. The final parameterization can be found in the P1.ipynb notebook. 
-
-The biggest hurdle to overcome by students was to use the Hough lines properly. The Hough transformation produces an array of line segments, i.e. every line the algorithm finds in the image. There can be *many* such lines. The tricky part is to find the line segments that represent the lane lines, "paste" those together somehow, and extrapolate them to the proper locations in the image. My function to do this is called `draw_lines`. 
-
-## Shortcomings
-In general my solution performed well for the two basic cases
-* solidWhiteRight.mp4
-* solidYellowLeft.mp4
-
-There was a lot of jitter in the computed lines indicating that my code frequently used the wrong Hough lines, e.g. lines that were not part of the lane lines. The simple modifications I made to track uphill and downhill improved lane line tracking in the solidYellowLeft problem quite a bit
-
-My solution performed *very* poorly for the challenge problem (challenge.mp4). I did not give myself enough time to investigate why, but I suspect it was due to the different image sizes. My solution used too many hardcoded parameters for the image sizes used in the previous two examples. This led to crazy lane line identification that would confuse any self-driving car.
-
-
-## Possible Improvements
-
-There are a number of possible improvements to make.
-1. Linear regression to determine best possible line from a set of line segments
-2. Non-linear fitting of curving lines to account for cars travelling around corners
-3. Tracking lanes from frame-to-frame to make it easier to determine
-
-&nbsp;&nbsp;&nbsp;&nbsp; * lanes from frame-to-frame
-
-&nbsp;&nbsp;&nbsp;&nbsp; * if car is crossing lanes
-
-4. Defining ranges of possible slopes and intercepts to avoid spurious, i.e. jittery, lines
-5. Smoothing slopes and intercepts from one frame to the next. Cars are not generally swerving around the road.
-6. More general parameterization for varying image size.
+#### Dataset Summary
+#### Exploratory Visualization
 
 
 
+### Design & Test Model Architecture
 
+#### Preprocessing
+#### Model Architecture
+#### Model Training
+#### Solution Approach
+
+
+### Test Model on New Images
+
+#### Acquiring New Images
+#### Performance on New Images
+#### Model Certainty - Softmax Probabilities
 
 
 
