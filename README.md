@@ -68,12 +68,14 @@ will be expected to identify.
 
 [image3]: ./origImages/origImages.PNG "Random Images from dataset"
 [image4]: ./origImages/labelDistTraining.PNG "Label Distribution of the Training Set"
-[image5]: ./origImages/labelDistTraining.PNG "Label Distribution of the Testing Set"
-[image6]: ./origImages/labelDistTraining.PNG "Label Distribution of the Validation Set"
+[image5]: ./origImages/labelDistTesting.PNG "Label Distribution of the Testing Set"
+[image6]: ./origImages/labelDistValidation.PNG "Label Distribution of the Validation Set"
 
 I looked at the distribution of labels across the training, testing and validation sets. Two observations were made:
-* The distribution across all 3 sets was approximately the same
+
+* The distribution of labels across all 3 sets was approximately the same
 * Some classifications were represented far more often than others
+
 Because the distribution of images across the classes was not even, it might be a good idea to augment the training data
 with images of the underrepresented classes.
 
@@ -82,12 +84,54 @@ with images of the underrepresented classes.
 ![Label Distribution of the Validation Set][image6]
 
 
-
 ### Design & Test Model Architecture
 
 #### Preprocessing
+
+Preprocessing the images consisted of making them all gray scale images instead of color images. 
+
+[//]: # (Image References)
+
+[imageGray]: ./origImages/origImages.PNG "Example of images in gray scale"
+[imageRotate]: ./origImages/rotate.PNG "Example of original images and those images rotated"
+[imageShear]: ./origImages/shear.PNG "Example of original images and those images sheared"
+[imageBright]: ./origImages/bright.PNG "Example of original images and those images with altered brightness"
+
+![Example of images in gray scale][imageGray]
+
+Image augmentation is a common and useful technique in image classification problems. By transforming the original images
+and keeping their labels, it is possible to create a large set of images from a small set of images. For example, in this
+project I randomly scaled, rotated, stretched and blurred subsets of the original training images and added those transformed images 
+to the training dataset. Image augmentations included:
+
+* Translation
+* Scaling
+* Warping
+* Altering brightness
+* Altering contrast
+* Rotating
+* Shearing
+* Blurring
+
+A few rotated images:
+![Example of original images and those images rotated][imageRotate]
+
+A few sheared images:
+![Example of original images and those images sheared][imageShear]
+
+A few images with altered brightness:
+![Example of original images and those images with altered brightness][imageBright]
+
+The other transformations are shown in the iPython notebook.
+
+When the image augmentation was complete I had 591752 training images from the original 34,799. I then
+normalized all the images by the dividing by 255.
+
+
 #### Model Architecture
+
 #### Model Training
+
 #### Solution Approach
 
 
