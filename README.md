@@ -68,7 +68,7 @@ will be expected to identify.
 
 [image3]: ./origImages/origImages.jpg "Random Images from dataset"
 
-![Random Images from dataset][image1]
+![Random Images from dataset][image3]
 
 
 
