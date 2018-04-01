@@ -36,11 +36,19 @@ To accomplish this task, I built an image processing pipeline, which consisted o
 * Analyze the softmax probabilities of the new iamges
 * Summarize the results in a written report
 
-## Rebric Points
+## Rubric Points
 
 ### Files Submitted
 
 
+[iPython Notebook]
+https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.ipynb
+
+[HTML output of notebook]
+https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.html
+
+[Project writeup (this file)]
+https://github.com/mjg042/TrafficSignClassifierHW/blob/master/README.md
 
 ### Dataset Exploration
 
