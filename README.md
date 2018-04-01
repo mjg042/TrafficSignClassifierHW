@@ -40,7 +40,6 @@ To accomplish this task, I built an image processing pipeline, which consisted o
 
 ### Files Submitted
 
-
 [iPython Notebook](https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.ipynb)
 
 [HTML output of notebook](https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.html)
@@ -49,8 +48,29 @@ To accomplish this task, I built an image processing pipeline, which consisted o
 
 ### Dataset Exploration
 
+Training, testing and validation images sets were provided by Udacity.
+
 #### Dataset Summary
+
+All images were 32x32x3 in size. There were:
+
+* 34,799 training images 
+* 12,630 testing images, and
+* 4,410 validation images
+
+43 different traffic signs were represented in the dataset. Each type of sign represents a class that the model
+will be expected to identify.
+
+
 #### Exploratory Visualization
+
+[//]: # (Image References)
+
+[image3]: ./origImages/origImages.jpg "Random Images from dataset"
+
+![Random Images from dataset][image1]
+
+
 
 
 
