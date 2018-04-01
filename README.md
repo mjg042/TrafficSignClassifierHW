@@ -66,11 +66,20 @@ will be expected to identify.
 
 [//]: # (Image References)
 
-[image3]: ./origImages/origImages.jpg "Random Images from dataset"
+[image3]: ./origImages/origImages.PNG "Random Images from dataset"
+[image4]: ./origImages/labelDistTraining.PNG "Label Distribution of the Training Set"
+[image5]: ./origImages/labelDistTraining.PNG "Label Distribution of the Testing Set"
+[image6]: ./origImages/labelDistTraining.PNG "Label Distribution of the Validation Set"
 
-![Random Images from dataset][image3]
+I looked at the distribution of labels across the training, testing and validation sets. Two observations were made:
+* The distribution across all 3 sets was approximately the same
+* Some classifications were represented far more often than others
+Because the distribution of images across the classes was not even, it might be a good idea to augment the training data
+with images of the underrepresented classes.
 
-
+![Label Distribution of the Training Set][image4]
+![Label Distribution of the Testing Set][image5]
+![Label Distribution of the Validation Set][image6]
 
 
 
