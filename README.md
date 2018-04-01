@@ -100,9 +100,11 @@ Preprocessing the images consisted of making them all gray scale images instead 
 ![Example of images in gray scale][imageGray]
 
 Image augmentation is a common and useful technique in image classification problems. By transforming the original images
-and keeping their labels, it is possible to create a large set of images from a small set of images. For example, in this
-project I randomly scaled, rotated, stretched and blurred subsets of the original training images and added those transformed images 
-to the training dataset. Image augmentations included:
+and keeping their labels, it is possible to create a large set of images from a small set of images. These transformed images
+attempt to mimic the variations in images that might be found in real-world data. For example, in this
+project I randomly scaled, rotated, stretched and blurred subsets of the original training images and added 
+those transformed images to the training dataset. Real-world data may be zoomed or rotated or blurred in similar ways.
+Image augmentations included:
 
 * Translation
 * Scaling
@@ -136,17 +138,17 @@ I tried the orignal LeNet-5 model architecture that we wrote for a previous assi
 accuracy. I tried several more and settled on one I found [here](http://localhost:8888/notebooks/notebooks/udacity/TSC.ipynb)
 and modified slightly:
 
-* Layer 1: Convolutional. Input = 32x32x3. Output = 30x30x32. padding='VALID'
-* Layer 2: Convolutional. Output = 28x28x32. pad='VALID'. 
-* Pooling. Input = 28x28x32. Output = 14x14x32.
-* Layer 3: Convolutional. (14x14x32)
-* Layer 4: Convolutional. (12x12x64)
-* Pooling. (2x2)
-* Layer_5: Convolutional. (3x3x128)
-* Flatten (1152)
-* Layer 6: Fully connected (1024)
-* Layer 7: Fully connected (512)
-* Layer 8: Fully connected (43)
+| Layer 1|: Input = 32x32x3. Output = 30x30x32. |
+| Layer 2|: Convolutional. Output = 28x28x32.   |
+| Pooling|: Input = 28x28x32. Output = 14x14x32.|
+| Layer 3|: Convolutional. (14x14x32)           |
+| Layer 4|: Convolutional. (12x12x64)           |
+| Pooling|: (2x2)                               |
+| Layer_5|: Convolutional. (3x3x128)            |
+| Flatten|: (1152)                              |
+| Layer 6|: Fully connected (1024)              |
+| Layer 7|: Fully connected (512)               |
+| Layer 8|: Fully connected (43)                |
 
 
 #### Model Training
