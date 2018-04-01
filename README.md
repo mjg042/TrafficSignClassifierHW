@@ -124,13 +124,45 @@ A few images with altered brightness:
 
 The other transformations are shown in the iPython notebook.
 
-When the image augmentation was complete I had 591752 training images from the original 34,799. I then
-normalized all the images by the dividing by 255.
+When the image augmentation was complete I had 59,152 total training images. The original dataset contained 34,799
+training images. 
+
+After augmentation, I normalized all the images by the dividing by 255.
 
 
 #### Model Architecture
 
+I tried the orignal LeNet-5 model architecture that we wrote for a previous assignment. It achieved about 89% testing 
+accuracy. I tried several more and settled on one I found [here](http://localhost:8888/notebooks/notebooks/udacity/TSC.ipynb)
+and modified slightly:
+
+* Layer 1: Convolutional. Input = 32x32x3. Output = 30x30x32. padding='VALID'
+* Layer 2: Convolutional. Output = 28x28x32. pad='VALID'. 
+* Pooling. Input = 28x28x32. Output = 14x14x32.
+* Layer 3: Convolutional. (14x14x32)
+* Layer 4: Convolutional. (12x12x64)
+* Pooling. (2x2)
+* Layer_5: Convolutional. (3x3x128)
+* Flatten (1152)
+* Layer 6: Fully connected (1024)
+* Layer 7: Fully connected (512)
+* Layer 8: Fully connected (43)
+
+
 #### Model Training
+
+[//]: # (Image References)
+
+[imageTestAccuracy]: ./origImages/testAccuracy.PNG "Plot of test accuracy"
+[imageTestAccuracy1]: ./origImages/testAccuracy1.PNG "Test and validation accuracy"
+
+Training the model on my laptop was pretty slow, and I highly recommend moving to a GPU as Udacity suggests. However, I
+was able to train the model for 25 epochs and obtained a test accuracy of 97.4%. Validation accuracy was even better at 
+99.3%.
+
+![Plot of test accuracy][imageTestAccuracy]
+![Test and validation accuracy][imageTestAccuracy1]
+
 
 #### Solution Approach
 
