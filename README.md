@@ -137,6 +137,7 @@ After augmentation, I normalized all the images by the dividing by 255.
 I tried the orignal LeNet-5 model architecture that we wrote for a previous assignment. It achieved about 89% testing 
 accuracy. I tried several more and settled on one I found [here](http://localhost:8888/notebooks/notebooks/udacity/TSC.ipynb)
 and modified slightly:
+
 | Layer  | Description                          |
 | ------ | ------------------------------------ |
 | Layer 1| Input = 32x32x3. Output = 30x30x32.  |
