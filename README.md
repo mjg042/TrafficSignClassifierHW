@@ -6,7 +6,7 @@ This doc describes the work I did for the Udacity Self Driving Car Traffic Sign 
 The Jupyter notebook Traffic_Sign_Classifier contains all the code and the results of the 
 execution of that code.
 
-The challenge of this project is to train a convolutional neural network model to classify German traffic signs. Students were given 
+The challenge of this project is to train a convolutional neural network model to classify German traffic signs. Like this
 
 [//]: # (Image References)
 
@@ -19,14 +19,13 @@ and this:
 
 ![Speed Limit 50kph][image2]
 
-Moreover, the project solution had to process a video taken from cars driving on the highway.
+## Build a Traffic Sign Recognition Project
 
-## Processing Pipeline
 To accomplish this task, I built an image processing pipeline, which consisted of the following steps.
 
 * Read train, test and validation image sets
 * Perform some basic analysis of the images
-* Explore the images
+* Explore and summarize the images
 * Convert all images to grayscale
 * Augment the images by transforming the original images in various ways
 * Normalize the images
@@ -34,6 +33,16 @@ To accomplish this task, I built an image processing pipeline, which consisted o
 * Train, test and validate model
 * Test model on new & unseen images
 * Analyze performance of the model
+* Analyze the softmax probabilities of the new iamges
+* Summarize the results in a written report
+
+## Rebric Points
+
+# Files Submitted
+
+
+
+
 
 To get started, Udacity kindly gave students a number of helper functions. Students then had to modify them to improve them. For example, a number of parameters had to be tweaked to transform the images properly. The final parameterization can be found in the P1.ipynb notebook. 
 
