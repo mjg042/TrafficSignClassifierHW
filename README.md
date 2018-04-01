@@ -41,14 +41,11 @@ To accomplish this task, I built an image processing pipeline, which consisted o
 ### Files Submitted
 
 
-[iPython Notebook]
-(https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.ipynb)
+[iPython Notebook](https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.ipynb)
 
-[HTML output of notebook]
-(https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.html)
+[HTML output of notebook](https://github.com/mjg042/TrafficSignClassifierHW/blob/master/Traffic_Sign_Classifier.html)
 
-[Project writeup (this file)]
-(https://github.com/mjg042/TrafficSignClassifierHW/blob/master/README.md)
+[Project writeup (this file)](https://github.com/mjg042/TrafficSignClassifierHW/blob/master/README.md)
 
 ### Dataset Exploration
 
