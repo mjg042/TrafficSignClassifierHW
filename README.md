@@ -164,6 +164,22 @@ Training the model on my laptop was pretty slow, and I highly recommend moving t
 was able to train the model for 25 epochs and obtained a test accuracy of 97.4%. Validation accuracy was even better at 
 99.3%.
 
+As I mentioned above, I tried several architectures. I also tried many variations of each. There are a number of parameters
+that can be tweaked:
+
+* mu
+* sigma
+* EPOCHS
+* BATCH_SIZE
+* rate (learning rate)
+* keep_prob
+
+Each had some impact on testing accuracy, but none had a huge impact. The biggest improvements to testing
+accuracy came from processing and augmenting the training images and from changes to the architecture. The
+architecture that gave me the best results had more layers, more pooling, more dropouts and more flattening.
+I plan to spend some more time playing around with the architecture to get a better feel for what works
+and what doesn't.
+
 ![Plot of test accuracy][imageTestAccuracy]
 ![Test and validation accuracy][imageTestAccuracy1]
 
@@ -172,8 +188,20 @@ was able to train the model for 25 epochs and obtained a test accuracy of 97.4%.
 
 ### Test Model on New Images
 
+A key indicator of model quality is whether or not it is effective at predicting classifications of new,
+never seen before images. 
+
 #### Acquiring New Images
+
+I downloaded a lot of images from Google Images representing German traffic signs. I cropped and scaled them to
+32x32 images and used them as a sort of new validation set.
+
 #### Performance on New Images
+
+Despite getting excellent results for predicting the validation set, my predictive model was terrible at 
+predicting the classifications of the new images. In fact, it was so bad I think I may have done the testing
+incorrectly. I didn't predict any of the new images correctly.
+
 #### Model Certainty - Softmax Probabilities
 
 
