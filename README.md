@@ -205,7 +205,7 @@ incorrectly. I didn't predict any of the new images correctly.
 #### Model Certainty - Softmax Probabilities
 
 Here are the softmax probabilities for the new images. As you can see they are mostly wrong in the same way. That makes
-me think that I have a bug in this part of the code.
+me think that I have a bug in this part of the code. The first two picks are the same for every image.
 
 [//]: # (Image References)
 
